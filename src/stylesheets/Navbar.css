@@ -23,6 +23,7 @@ nav > .logo{
 nav > .logo >a{
     text-decoration: none;
     color: white;
+    font-family: cursive;
 }
 .searchInpBox{
     width: calc(100% - 200px);
