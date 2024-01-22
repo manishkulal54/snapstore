@@ -5,8 +5,6 @@ import { IoClose } from "react-icons/io5";
 import { IoMdDownload } from "react-icons/io";
 import { saveAs } from "file-saver";
 
-import img from "../bin/img1.jpg";
-
 export default function Popup(props) {
   const { setShowPopup, popupObj, showPopup } = useContext(ImageContext);
   const [selectedSize, setSelectedSize] = useState("original");
@@ -22,10 +20,12 @@ export default function Popup(props) {
     return () => {
       document.removeEventListener("mousedown", handler);
     };
+    // eslint-disable-next-line
   }, []);
 
   useEffect(() => {
     getDims(selectedSize);
+    // eslint-disable-next-line
   }, [selectedSize]);
 
   function getDims() {

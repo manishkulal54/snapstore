@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from 'react'
 import { IoSearch } from "react-icons/io5";
 import '../stylesheets/Navbar.css'
 import { ImageContext } from '../context/ImageContext';
-import img from '../bin/img1.jpg'
 
 export default function Navbar() {
   const [query,setQuery]=useState("")
@@ -24,11 +23,11 @@ export default function Navbar() {
         handleSearch()
       }
     })
+    // eslint-disable-next-line
    },[])
   return (
     <nav>
         <div className="logo">
-            {/* <img src={img} alt="" /> */}
             <a href='https://manishkulal.netlify.app/'>SNAPSTORE</a>
         </div>
         <div className="searchInpBox">

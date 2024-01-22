@@ -12,6 +12,7 @@ export default function Home() {
  useEffect(()=>{
   let arr=["Nature","cars","Bike","Painting","flowers","Technology","Cat","Dog","Animal","Birds","love","romance","rose"]
   searchImage(arr[(Math.floor(Math.random() * arr.length))],(Math.floor(Math.random() * 10) + 5))
+  // eslint-disable-next-line
  },[])
 
   return (

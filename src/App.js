@@ -1,8 +1,7 @@
 import Navbar from "./components/Navbar";
-import Popup from "./components/Popup";
 import Home from "./pages/Home";
 import './stylesheets/App.css'
-import React, { useState } from "react";
+import React from "react";
 
 function App() {
 
