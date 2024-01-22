@@ -1,0 +1,106 @@
+.popupContainer{
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #9fe901;
+    padding-bottom: 70px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+.popupContainer::-webkit-scrollbar{
+    display: none;
+}
+.popupContainer >.closeBtn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 70px;
+    height: 50px;
+    border-radius: 13px;
+    font-size: 2rem;
+    background: transparent;
+    cursor: pointer;
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.05s ease-in-out;
+}
+
+.popupContainer >.closeBtn:hover{
+    background-color: red;
+}
+
+.popupContainer .img{
+    width:max-content;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 50px auto 0 auto;
+}
+
+.popupContainer .img>img{
+    object-fit:contain;
+    min-height: 80%;
+    border-radius: 5px;
+}
+.popupContainer>p{
+    height: max-content;
+    text-align: center;
+    grid-column: span 3;
+    padding: 10px 0;
+}
+.popupContainer> .options{
+    width: 100%;
+    height: 5%;
+    padding: 10px 0;
+    display: flex;
+    align-items:flex-start ;
+    justify-content: space-around;
+}
+.popupContainer> .options>.selectInp>select{
+    width: max-content;
+    padding: 0 3rem;
+    text-align: center;
+    height: 38px;
+    border-radius: 9px;
+    font-size: 1rem;
+    float: left;
+    cursor: pointer;
+}
+.popupContainer> .options > .downloadBtn{
+    float: right;
+    height: 38px;
+    width: max-content;
+    padding: 0 30px;
+    font-size:1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+    background: none;
+    border: 1px solid white;
+}
+.popupContainer> .options>.downloadBtn:hover{
+background: white;
+border: 2px soldi black;
+}
+
+@media screen and (max-width:800px) {
+    .popupContainer> .options{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 30px;
+    }
+    
+.popupContainer> .options>.downloadBtn{
+    padding: 20px 30px;
+}
+}
