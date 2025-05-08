@@ -18,9 +18,7 @@ export default function Home() {
   return (
     <div className='homeContainer'>
         <>{showPopup && <Popup/>}</>
-        <>
         {searchImgData&&searchImgData.map(imgData=>(<Box imgData={imgData} key={imgData.id}/>))}
-        </>
     </div>
   )
 }
